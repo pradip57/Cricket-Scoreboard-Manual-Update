@@ -1,0 +1,496 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+#main{
+
+    position: relative;
+    height: 100vh;
+}
+
+#rectangle{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: purple;
+    top: 110px;
+    
+}
+
+
+#bowlerpart{
+
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: beige;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+
+}
+
+.country1::after{
+
+    position: absolute;
+    content: "NEPAL";
+    color: white;
+    top: 40px;
+    font-size: x-large;
+    font-weight: bolder;
+    left: 25px;
+}
+
+.country2::after{
+    position: absolute;
+    content: "INDIA";
+    color: white;
+    top: 40px;
+    font-size: x-large;
+    font-weight: bolder;
+    right: 25px;   
+}
+
+.batfirst::after{
+
+    position: absolute;
+    content: "NEPAL WON THE TOSS AND DECIDED TO BAT FIRST";
+    color: white;
+    top: 75px;
+    font-size: 17px;
+    font-weight:500;
+    left: 36%; 
+}
+
+.score::after{
+
+    position: absolute;
+    
+ 
+    content: var(--content,"NEPAL : 0/0");
+    color: white;
+
+    left: 40%;
+    top: 30px;
+    font-size: x-large;
+    font-weight: bolder;
+    
+
+}
+
+.overs::after{
+    position: absolute;
+    content: var(--content , "OVERS : 0.0");
+    color: white;
+    left: 51%;
+    top: 30px;
+    font-size: x-large;
+    font-weight: bolder;
+  
+
+}
+
+
+.batter1::after{
+
+    position: absolute;
+    content: var(--content , "KUSHAL BHURTEL : 0 *");
+    color: white;
+    opacity: var(--opacity,1);
+    left: 15%;
+    top: 30px;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+
+.batter2::after{
+
+    position: absolute;
+    content: var(--content , "ANIL SHAH : 0");
+    color: white;
+    opacity: var(--opacity,1);
+    left: 15%;
+    top: 60px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.bowler1::after{
+    position: absolute;
+    content: var(--content , "BHUMRAH : 0/0.0");
+    color: white;
+    right: 14.5%;
+    top: 30px;
+    font-size: larger;
+    font-weight: bold;
+   
+
+}
+
+.bowler2::after{
+    position: absolute;
+    content: var(--content , "SIRAJ : 0/0.0");
+    color: white;
+    right: 14.5%;
+    top: 30px;
+    font-size: larger;
+    font-weight: bold;
+    opacity: 0;
+   
+
+}
+
+
+
+.designrun1{
+    position: absolute;
+    
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: orchid;
+    top: 60px;
+    left: 73.5%;
+
+}
+
+
+
+.designrun2{
+    position: absolute;
+    
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: orchid;
+    top: 60px;
+    left: 76%;
+   
+}
+
+
+.designrun3{
+    position: absolute;
+    
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: orchid;
+    top: 60px;
+    left: 78.5%;
+   
+}
+
+
+.designrun4{
+    position: absolute;
+    
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: orchid;
+    top: 60px;
+    left: 81%; 
+  
+}
+
+.designrun5{
+    position: absolute;
+    
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: orchid;
+    top: 60px;
+    left: 83.5%;
+    
+}
+
+
+.designrun6{
+    position: absolute;
+    
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: orchid;
+    top: 60px;
+    left: 86%;
+  
+    
+}
+
+
+
+
+.designrun6::after{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    color: white;
+    font-weight: bold;
+}
+
+.designrun5::after{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    color: white;
+    font-weight: bold;
+   
+}
+
+
+.designrun4::after{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    color: white;
+    font-weight: bold;
+   
+}
+
+.designrun3::after{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    color: white;
+    font-weight: bold;
+  
+}
+
+
+.designrun2::after{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.designrun1::after{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 7px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+.btn{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.row1{
+    display: flex;
+    
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}
+
+.row2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+
+.row3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+.designrun1{
+    position: absolute;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+   
+    top: 60px;
+    left: 73.5%;
+    
+    
+}
+
+
+
+
+
+
+
+
+.designrun2{
+    position: absolute;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    
+    top: 60px;
+    left: 76%;
+   
+}
+
+.designrun3{
+    position: absolute;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+ 
+    top: 60px;
+    left: 78.5%;
+   
+}
+
+
+.designrun4{
+    position: absolute;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+
+    top: 60px;
+    left: 81%; 
+    
+}
+
+
+.designrun5{
+    position: absolute;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+   
+    top: 60px;
+    left: 83.5%;
+  
+}
+
+
+
+
+.designrun6{
+    position: absolute;
+    
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+  
+    top: 60px;
+    left: 86%;
+
+    
+}
+
+.designrun1::after{
+    position: absolute;
+    content: var(--run,"");
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    
+
+    
+    
+}
+
+
+
+
+
+
+.designrun5::after{
+    position: absolute;
+    content: var(--run,"");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.designrun4::after{
+    position: absolute;
+    content: var(--run,"");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+ 
+}
+
+
+.designrun3::after{
+    position: absolute;
+    content: var(--run,"");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+ 
+}
+
+
+.designrun2::after{
+    position: absolute;
+    content: var(--run,"");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.designrun6::after{
+    position: absolute;
+    content: var(--run,"");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+
